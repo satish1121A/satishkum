@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>employee class</title>
+<body>
+<center>
+<div id="heading">
+<h2>employee class</h2>
+</div>
+<div id="maincontent">
+</div>
+<script>
+class person
+{
+  constructor(name,age)
+{
+   this.name=name;
+   this.age=age;
+}
+}
+class employee extends person
+{
+   constructor(name,age,role,contact)
+  {
+      super(name,age);
+     this.role=role;
+     this.contact=contact;
+}
+}
+var emp=new employee("anu",22,"programmer",8000);
+document.writeln("name of the name:" +emp.name);
+document.write("<br>");
+document.writeln("age:" +emp.age);
+document.write("<br>");
+document.writeln("role:" +emp.role);
+document.write("<br>");
+document.writeln("contact:" +emp.contact);
+</script>
+</div>
+</center>
+</body>
+<?html>
